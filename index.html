@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Java-Code-Quiz</title>
-    <link rel="stylesheet" href="assets/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  </head>
-  <body>
-   <br>
-    <h1>JavaScript Quiz</h1>
-    <p>You have 1 minute to answer all questions,and every question you get wrong is 2 seconds decucted from the timer. <br><br>Start the Quiz when,you're ready.</p>
-    <a href="quiz.html">Start</a>
 
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Quiz</title>
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+<!-- Our header contains a navbar with our highscore link & game timer -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="viewHighScores">View Highscores</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav float-right">
+      <li class="nav-item" id="timer"></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- The welcome-area class greets our user and allows them to start the quiz -->
+<section class="welcome-area">
+  <div class="container">
+    <div id="get-started">
+      <h1><i class= ></i> <br /> Coding Quiz</h1>
+      <p class="lead">
+        Get Starts Your Quiz <br />
+        You have 30 seconds to answer all questions,and every question you get wrong is 2 seconds decucted from the timer. <br><br>Start the Quiz when,you're ready.
+      </p>
+      <button class="customBtn" id="startBtn">Start Quiz!</button>
+    </div>
+  </div>
+</section>
+
+<!-- The main-question-area class is where we will populate our questions -->
+<section class="main-question-area">
+  <div class="container">
+    <div id="question"></div>
+
+    <ul id="question-list"></ul>
+
+    <div id="question-result"></div>
+  </div>
+</section>
+
+<!-- Import our fontawesome JavaScript -->
+<script src="https://kit.fontawesome.com/" crossorigin="anonymous"></script>
+<!-- Import our custom JavaScript code.-->
+<script src="assets/js/script.js"></script>
+</body>
+
 </html>
