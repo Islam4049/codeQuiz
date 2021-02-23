@@ -1,31 +1,33 @@
+
 var questions = [
   {
-    question: "Commonly used data types DO NOT include:",
+    title: "Commonly used data types DO NOT include:",
     choices: ["strings", "booleans", "alerts", "numbers"],
     answer: "alerts",
   },
   {
-    question:
-      "The condition in an if / else statement is enclosed within ____.",
+    title: "The condition in an if / else statement is enclosed within ____.",
     choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
     answer: "parentheses",
   },
-    {question:"Commonly Used program to make website ",
+    {title:"Commonly Used program to make website ",
     choices: ["HTML", "jQuery", "reAct", "java"],
     answer: "HTML",
 },
-
+  
  
- {question:"Who Invented Java Script?",
- choices: ["Douglus Smith", "Brendan Eich", "Madum Cory", "Mark Jukarberg"],
- answer: "Brendan Eich",
+ {
+   title:"Who Invented Java Script?",
+   choices: ["Douglus Smith", "Brendan Eich", "Madum Cory", "Mark Jukarberg"],
+   answer: "Brendan Eich",
  },
   {
- question:"Who is the first Computer Programmer?",
- choices: ["Ada Lovelace","Robart Hov", "Stevin Munchn", "Dolnald Trump" ],
- answer: "Ada Lovelace",
+   title:"Who is the first Computer Programmer?",
+   choices: ["Ada Lovelace","Robart Hov", "Stevin Munchn", "Dolnald Trump" ],
+  answer: "Ada Lovelace",
   },
 ];
+
 
 var questionEl = document.querySelector("#question");
 var optionListEl = document.querySelector("#option-list");
@@ -34,7 +36,7 @@ var timerEl = document.querySelector("#timer");
 
 var questionIndex = 0;
 var correctCount = 0;
-var time = 15;
+var time = 60;
 var intervalId;
 
 function endQuiz() {
